@@ -18,6 +18,13 @@
   transform: translate(0%, -50%);
 }
 
+.Button:hover {
+  background-color: #52ffa8 !important;
+  color: #52ffa8 !important;
+  opacity: 100% !important;
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.2) !important;
+}
+
 #root {
   max-width: 100;
   margin: 0;
