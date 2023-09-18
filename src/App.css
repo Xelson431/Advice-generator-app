@@ -1,0 +1,26 @@
+/* Import and define your font family */
+@font-face {
+  font-family: "Manrope";
+  src: url("https://fonts.google.com/specimen/Manrope") format("woff2"); /* Update the path */
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Define a CSS class to apply the font */
+.custom-font {
+  font-family: "Manrope", sans-serif; /* Use your custom font as a fallback */
+}
+.Button {
+  place-self: center;
+  fill: #52ffa8 !important;
+  width: 3.2rem;
+  height: 3.2rem;
+  transform: translate(0%, -50%);
+}
+
+#root {
+  max-width: 100;
+  margin: 0;
+  padding: 0rem;
+  text-align: center;
+}
