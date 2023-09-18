@@ -1,5 +1,4 @@
 import {
-  Grid,
   Card,
   Stack,
   Box,
@@ -11,7 +10,8 @@ import {
 import dice from "../assets/icon-dice.svg";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import divider from "../assets/pattern-divider-desktop.svg";
+import DividerDesktop from "../assets/pattern-divider-desktop.svg";
+import DividerMobile from "../assets/pattern-divider-mobile.svg";
 import { useTheme } from "@mui/material/styles";
 export const Home = () => {
   const theme = useTheme(); // Access the theme
@@ -86,9 +86,10 @@ export const Home = () => {
                   fontSize={28}
                   color="secondary.main"
                 >
-                  "{data.slip.advice}"
+                  "{data?.slip.advice}"
                 </Typography>
-                <img src={divider} />
+
+                <img src={DividerMobile} />
               </Stack>
             </CardContent>
           </Card>
